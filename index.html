@@ -1,13 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-  <meta charset="utf-8">
-  <title>Coverset Studio</title>
-  <meta http-equiv="refresh" content="0; url=https://www.coverset.eu">
-  <link rel="canonical" href="https://www.coverset.eu">
-  <script>window.location.href = "https://www.coverset.eu";</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coverset Studios</title>
+<meta name="description" content="Coverset Studios, Berlin. Die neue Website entsteht gerade.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2317213a'/%3E%3Ccircle cx='16' cy='16' r='6.5' fill='none' stroke='%23f0b429' stroke-width='2.4'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#f7f6f4; --card:#ffffff; --ink:#17213a; --mute:#5c6478;
+    --line:#e3e1dd; --sun:#f0b429;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#0e1526; --card:#141d31; --ink:#eef1f7; --mute:#9aa3b8; --line:#243150; }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--ink);
+    font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    display:flex; flex-direction:column; min-height:100vh;
+  }
+  .wrap{width:100%; max-width:720px; margin:0 auto; padding:0 24px}
+  main{flex:1 0 auto; display:flex; align-items:center; padding:72px 0 56px}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:20px;
+    padding:56px 48px; width:100%;
+  }
+  .mark{display:flex; align-items:center; gap:14px; margin-bottom:28px}
+  .mark svg{display:block; flex:none}
+  h1{
+    margin:0; font-size:27px; line-height:1.2; font-weight:700;
+    letter-spacing:.015em;
+  }
+  .lead{margin:0 0 6px; font-size:19px; color:var(--ink)}
+  .sub{margin:0; color:var(--mute)}
+  .kontakt{margin-top:30px; padding-top:26px; border-top:1px solid var(--line)}
+  .kontakt b{display:block; font-size:13px; letter-spacing:.09em; text-transform:uppercase; color:var(--mute); font-weight:700; margin-bottom:6px}
+  a{color:inherit; text-decoration:none; border-bottom:2px solid var(--sun); padding-bottom:1px}
+  a:hover{border-bottom-color:var(--ink)}
+  footer{flex:none; padding:0 0 64px}
+  .recht{
+    border-top:1px solid var(--line); padding-top:34px;
+    display:grid; grid-template-columns:1fr 1fr; gap:36px;
+    font-size:14.5px; line-height:1.6; color:var(--mute);
+  }
+  .recht h2{
+    margin:0 0 10px; font-size:13px; letter-spacing:.09em; text-transform:uppercase;
+    color:var(--ink); font-weight:700;
+  }
+  .recht p{margin:0 0 10px}
+  .recht a{border-bottom-width:1px}
+  @media (max-width:640px){
+    main{padding:44px 0 36px}
+    .card{padding:38px 26px; border-radius:16px}
+    h1{font-size:23px}
+    .lead{font-size:18px}
+    .recht{grid-template-columns:1fr; gap:28px}
+  }
+</style>
 </head>
 <body>
-  <p>Redirecting to <a href="https://www.coverset.eu">coverset.eu</a>...</p>
+
+<main>
+  <div class="wrap">
+    <div class="card">
+      <div class="mark">
+        <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="7" fill="#17213a"/>
+          <circle cx="16" cy="16" r="6.5" fill="none" stroke="#f0b429" stroke-width="2.4"/>
+        </svg>
+        <h1>Coverset Studios</h1>
+      </div>
+      <p class="lead">Die neue Website entsteht gerade.</p>
+      <p class="sub">Bis dahin erreichen Sie uns direkt.</p>
+
+      <div class="kontakt">
+        <b>Kontakt</b>
+        <a href="mailto:office@coverset.studio">office@coverset.studio</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="recht">
+      <section>
+        <h2>Impressum</h2>
+        <p>Angaben gemäß § 5 DDG</p>
+        <p>
+          Coverset Studios Produktgesellschaft mbH<br>
+          Alt-Marienfelde 26<br>
+          12277 Berlin<br>
+          Deutschland
+        </p>
+        <p>Geschäftsführung: G. Steffen</p>
+        <p><a href="mailto:office@coverset.studio">office@coverset.studio</a></p>
+        <p>
+          Registergericht: Amtsgericht Charlottenburg (Berlin)<br>
+          Abteilung B, Nummer: HRB 264401 B
+        </p>
+        <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a UStG: DE462079796</p>
+      </section>
+
+      <section>
+        <h2>Datenschutz</h2>
+        <p>Diese Seite setzt keine Cookies, bindet nichts von Dritten ein und enthält keine Formulare. Es findet keine Analyse des Besuchsverhaltens statt.</p>
+        <p>Ausgeliefert wird sie über GitHub Pages (GitHub Inc.). Dabei fallen beim Anbieter technisch notwendige Zugriffsdaten an, darunter die IP-Adresse des Abrufs.</p>
+        <p>Fragen dazu an <a href="mailto:office@coverset.studio">office@coverset.studio</a>.</p>
+        <p>Für Inhalte externer Links sind ausschließlich deren Betreiber verantwortlich.</p>
+      </section>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
