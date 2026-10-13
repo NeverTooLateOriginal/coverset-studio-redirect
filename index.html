@@ -1,120 +1,172 @@
-<!DOCTYPE html>
-<html lang="de">
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Coverset Studios</title>
-<meta name="description" content="Coverset Studios, Berlin. Die neue Website entsteht gerade.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2317213a'/%3E%3Ccircle cx='16' cy='16' r='6.5' fill='none' stroke='%23f0b429' stroke-width='2.4'/%3E%3C/svg%3E">
-<style>
-  :root{
-    --bg:#f7f6f4; --card:#ffffff; --ink:#17213a; --mute:#5c6478;
-    --line:#e3e1dd; --sun:#f0b429;
-  }
-  @media (prefers-color-scheme: dark){
-    :root{ --bg:#0e1526; --card:#141d31; --ink:#eef1f7; --mute:#9aa3b8; --line:#243150; }
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0;padding:0}
-  body{
-    background:var(--bg); color:var(--ink);
-    font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    -webkit-font-smoothing:antialiased;
-    display:flex; flex-direction:column; min-height:100vh;
-  }
-  .wrap{width:100%; max-width:720px; margin:0 auto; padding:0 24px}
-  main{flex:1 0 auto; display:flex; align-items:center; padding:72px 0 56px}
-  .card{
-    background:var(--card); border:1px solid var(--line); border-radius:20px;
-    padding:56px 48px; width:100%;
-  }
-  .mark{display:flex; align-items:center; gap:14px; margin-bottom:28px}
-  .mark svg{display:block; flex:none}
-  h1{
-    margin:0; font-size:27px; line-height:1.2; font-weight:700;
-    letter-spacing:.015em;
-  }
-  .lead{margin:0 0 6px; font-size:19px; color:var(--ink)}
-  .sub{margin:0; color:var(--mute)}
-  .kontakt{margin-top:30px; padding-top:26px; border-top:1px solid var(--line)}
-  .kontakt b{display:block; font-size:13px; letter-spacing:.09em; text-transform:uppercase; color:var(--mute); font-weight:700; margin-bottom:6px}
-  a{color:inherit; text-decoration:none; border-bottom:2px solid var(--sun); padding-bottom:1px}
-  a:hover{border-bottom-color:var(--ink)}
-  footer{flex:none; padding:0 0 64px}
-  .recht{
-    border-top:1px solid var(--line); padding-top:34px;
-    display:grid; grid-template-columns:1fr 1fr; gap:36px;
-    font-size:14.5px; line-height:1.6; color:var(--mute);
-  }
-  .recht h2{
-    margin:0 0 10px; font-size:13px; letter-spacing:.09em; text-transform:uppercase;
-    color:var(--ink); font-weight:700;
-  }
-  .recht p{margin:0 0 10px}
-  .recht a{border-bottom-width:1px}
-  @media (max-width:640px){
-    main{padding:44px 0 36px}
-    .card{padding:38px 26px; border-radius:16px}
-    h1{font-size:23px}
-    .lead{font-size:18px}
-    .recht{grid-template-columns:1fr; gap:28px}
-  }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#112831">
+  <meta name="description" content="Coverset Studios develops apps, explores AI and computer vision, and creates imaginative visual technologies. Discover Never Too Late and the experimental LAST project.">
+  <title>Coverset Studios — Software. AI. A little imagination.</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-
-<main>
-  <div class="wrap">
-    <div class="card">
-      <div class="mark">
-        <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true">
-          <rect width="32" height="32" rx="7" fill="#17213a"/>
-          <circle cx="16" cy="16" r="6.5" fill="none" stroke="#f0b429" stroke-width="2.4"/>
-        </svg>
-        <h1>Coverset Studios</h1>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="hero-shell" id="top">
+    <div class="hero-noise" aria-hidden="true"></div>
+    <header class="site-header container">
+      <a class="brand" href="#top" aria-label="Coverset Studios — Home">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M33.5 11.5a17 17 0 1 0 0 25" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linecap="round"/><path d="M36 17H24.5v14H36" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="brand-text"><span class="brand-main">COVERSET</span><span class="brand-sub" aria-label="Studios"><span aria-hidden="true">S</span><span aria-hidden="true">T</span><span aria-hidden="true">U</span><span aria-hidden="true">D</span><span aria-hidden="true">I</span><span aria-hidden="true">O</span><span aria-hidden="true">S</span></span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#expertise" data-i18n="navExpertise">Expertise</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="header-right">
+        <div class="language-switch" aria-label="Language selection">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" data-lang="de" aria-pressed="false">DE</button>
+        </div>
+        <a class="header-cta" href="#contact"><span data-i18n="headerCta">Let's talk</span><span aria-hidden="true">↗</span></a>
       </div>
-      <p class="lead">Die neue Website entsteht gerade.</p>
-      <p class="sub">Bis dahin erreichen Sie uns direkt.</p>
+    </header>
+    <main id="main">
+      <section class="hero container" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span><span data-i18n="heroEyebrow">INDEPENDENT TECHNOLOGY STUDIO · GERMANY</span></div>
+          <h1 id="hero-title"><span data-i18n="heroTitle1">Technology,</span><br><em data-i18n="heroTitle2">seen differently.</em></h1>
+          <p class="hero-intro" data-i18n="heroIntro">We develop useful software and intelligent visual technologies — bringing a filmmaker's eye to the digital world.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects"><span data-i18n="heroPrimary">Discover our work</span><span class="btn-arrow" aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#expertise"><span data-i18n="heroSecondary">What we do</span><span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-footnote"><span class="footnote-rule"></span><span data-i18n="heroFootnote">Software engineering meets visual storytelling.</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Abstract visualization of intelligent image processing" role="img">
+          <div class="visual-grid"></div>
+          <div class="orb-halo orb-halo-one"></div>
+          <div class="orb-halo orb-halo-two"></div>
+          <svg class="orb-svg" viewBox="0 0 560 560" aria-hidden="true">
+            <defs>
+              <radialGradient id="sphereFill" cx="32%" cy="22%" r="80%"><stop offset="0" stop-color="#84b8b4" stop-opacity=".56"/><stop offset=".48" stop-color="#2d6570" stop-opacity=".46"/><stop offset="1" stop-color="#102b36" stop-opacity=".18"/></radialGradient>
+              <linearGradient id="strokeOrb" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d2f4bf" stop-opacity=".8"/><stop offset="1" stop-color="#d2f4bf" stop-opacity=".03"/></linearGradient>
+              <clipPath id="circleClip"><circle cx="280" cy="280" r="185"/></clipPath>
+            </defs>
+            <circle cx="280" cy="280" r="239" fill="none" stroke="#c7e8d7" stroke-opacity=".16" stroke-width="1" stroke-dasharray="2 9"/>
+            <circle cx="280" cy="280" r="205" fill="none" stroke="#d0f0e2" stroke-opacity=".22" stroke-width="1"/>
+            <circle cx="280" cy="280" r="185" fill="url(#sphereFill)" stroke="url(#strokeOrb)" stroke-width="1.6"/>
+            <g clip-path="url(#circleClip)" fill="none" stroke="#c6e6e0" stroke-opacity=".26" stroke-width="1">
+              <ellipse cx="280" cy="280" rx="185" ry="65"/><ellipse cx="280" cy="280" rx="185" ry="127"/>
+              <ellipse cx="280" cy="280" rx="75" ry="185"/><ellipse cx="280" cy="280" rx="143" ry="185"/>
+              <path d="M95 280H465M280 95V465M110 205H450M110 355H450"/>
+              <path d="M68 392Q260 115 500 165M40 290Q270 470 535 235" stroke="#d1f4c1" stroke-opacity=".3" stroke-width="1.5"/>
+            </g>
+            <path d="M92 327a196 196 0 0 0 183 150" fill="none" stroke="#d2f4bf" stroke-width="4" stroke-linecap="round"/>
+            <path d="M420 143a195 195 0 0 0-100-55" fill="none" stroke="#d2f4bf" stroke-opacity=".7" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="155" cy="183" r="6" fill="#d2f4bf"/><circle cx="388" cy="393" r="7" fill="#d2f4bf"/>
+            <path d="M155 183L111 142H49M388 393l43 35h75" fill="none" stroke="#d2f4bf" stroke-opacity=".6" stroke-width="1.5"/>
+            <g transform="translate(250 244)"><path d="M0 0h60v72H0z" fill="#102e39" fill-opacity=".5" stroke="#d2f4bf" stroke-width="1.8"/><path d="M13 13h34M13 24h20M13 47h34M13 58h24" stroke="#d2f4bf" stroke-width="2" stroke-linecap="round"/><circle cx="45" cy="24" r="5" fill="#d2f4bf"/></g>
+          </svg>
+          <div class="visual-label label-top"><span class="label-index">01 / VISION</span><strong data-i18n="visualLabelTop">Find the signal.</strong><span class="label-line"></span></div>
+          <div class="visual-label label-bottom"><span class="label-index">02 / SOFTWARE</span><strong data-i18n="visualLabelBottom">Build what's next.</strong><span class="label-line"></span></div>
+          <div class="visual-caption"><span class="visual-caption-dot"></span>IMAGE · DATA · INTELLIGENCE</div>
+          <div class="play-spark play-spark-one" aria-hidden="true">✳</div>
+          <div class="play-spark play-spark-two" aria-hidden="true">✦</div>
+        </div>
+      </section>
+    </main>
+  </div>
 
-      <div class="kontakt">
-        <b>Kontakt</b>
-        <a href="mailto:office@coverset.studio">office@coverset.studio</a>
+  <section class="section expertise-section" id="expertise" aria-labelledby="expertise-title">
+    <div class="container">
+      <div class="section-heading"><div><div class="section-kicker"><span class="kicker-line"></span><span data-i18n="expertiseKicker">OUR EXPERTISE</span></div><h2 id="expertise-title" data-i18n="expertiseTitle">Built across disciplines.</h2></div><p data-i18n="expertiseIntro">Three connected fields. One approach: thoughtful technology that solves real problems.</p></div>
+      <div class="expertise-grid">
+        <article class="expertise-card"><div class="card-top"><span class="card-number">01</span><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="18" y="7" width="28" height="50" rx="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M26 14h12M28 49h8M24 25h16M24 32h16M24 39h9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><h3 data-i18n="card1Title">App Development</h3><p data-i18n="card1Text">From a first idea to a real product. We design and develop mobile applications with a focus on everyday usefulness.</p><div class="card-tag" data-i18n="card1Tag">iOS · Android · Digital products</div></article>
+        <article class="expertise-card"><div class="card-top"><span class="card-number">02</span><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="9" y="15" width="46" height="34" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="32" r="11" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="32" r="3" fill="currentColor"/><path d="M5 32h8M51 32h8M32 11v8M32 45v8" stroke="currentColor" stroke-width="2"/></svg></div><h3 data-i18n="card2Title">AI & Computer Vision</h3><p data-i18n="card2Text">We explore intelligent image analysis, real-time event detection and the practical potential of AI-assisted workflows.</p><div class="card-tag" data-i18n="card2Tag">Research · Prototyping · Image analysis</div></article>
+        <article class="expertise-card"><div class="card-top"><span class="card-number">03</span><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M7 18h50v30H7z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 24h40v18H12zM24 48v7M40 48v7M20 55h24" fill="none" stroke="currentColor" stroke-width="2"/><path d="M17 35l9-7 9 7 9-7" fill="none" stroke="currentColor" stroke-width="2"/></svg></div><h3 data-i18n="card3Title">Visual Technology</h3><p data-i18n="card3Text">A background in filmmaking informs our work on imaging systems, virtual production and new technical concepts.</p><div class="card-tag" data-i18n="card3Tag">Imaging · Virtual production · Innovation</div></article>
       </div>
     </div>
-  </div>
-</main>
+  </section>
 
-<footer>
-  <div class="wrap">
-    <div class="recht">
-      <section>
-        <h2>Impressum</h2>
-        <p>Angaben gemäß § 5 DDG</p>
-        <p>
-          Coverset Studios Produktgesellschaft mbH<br>
-          Alt-Marienfelde 26<br>
-          12277 Berlin<br>
-          Deutschland
-        </p>
-        <p>Geschäftsführung: G. Steffen</p>
-        <p><a href="mailto:office@coverset.studio">office@coverset.studio</a></p>
-        <p>
-          Registergericht: Amtsgericht Charlottenburg (Berlin)<br>
-          Abteilung B, Nummer: HRB 264401 B
-        </p>
-        <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a UStG: DE462079796</p>
-      </section>
-
-      <section>
-        <h2>Datenschutz</h2>
-        <p>Diese Seite setzt keine Cookies, bindet nichts von Dritten ein und enthält keine Formulare. Es findet keine Analyse des Besuchsverhaltens statt.</p>
-        <p>Ausgeliefert wird sie über GitHub Pages (GitHub Inc.). Dabei fallen beim Anbieter technisch notwendige Zugriffsdaten an, darunter die IP-Adresse des Abrufs.</p>
-        <p>Fragen dazu an <a href="mailto:office@coverset.studio">office@coverset.studio</a>.</p>
-        <p>Für Inhalte externer Links sind ausschließlich deren Betreiber verantwortlich.</p>
-      </section>
+  <section class="manifesto-band" aria-label="Our approach">
+    <div class="container manifesto-inner">
+      <span class="manifesto-star" aria-hidden="true">✳</span>
+      <p><span data-i18n="manifestoFirst">Serious about technology.</span> <em data-i18n="manifestoSecond">Curious about everything.</em></p>
+      <span class="manifesto-trail" aria-hidden="true">↗</span>
     </div>
-  </div>
-</footer>
+  </section>
 
+  <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+    <div class="container">
+      <div class="section-heading projects-heading"><div><div class="section-kicker"><span class="kicker-line"></span><span data-i18n="projectsKicker">SELECTED WORK</span></div><h2 id="projects-title" data-i18n="projectsTitle">Ideas in motion.</h2></div><p data-i18n="projectsIntro">From a published app to patented technology and a playful new experiment.</p></div>
+      <article class="project-feature">
+        <div class="project-content"><div class="project-meta"><span class="project-status"><span class="status-dot"></span><span data-i18n="project1Status">PUBLISHED APP</span></span><span>01 / 03</span></div><div class="project-body"><div class="project-overline" data-i18n="project1Overline">SMART CALENDAR & TRAVEL ASSISTANT</div><h3>Never Too Late<span class="project-period">.</span></h3><p data-i18n="project1Text">A smarter way to manage appointments and departures. The app combines calendar planning with live traffic information and timely reminders.</p><a class="project-link" href="https://coverset.eu" target="_blank" rel="noopener noreferrer"><span data-i18n="project1Link">Visit product website</span><span aria-hidden="true">↗</span></a></div><div class="project-bottom"><span data-i18n="project1Platform">Available for iOS and Android</span><span class="mini-icon" aria-hidden="true">↗</span></div></div>
+        <div class="project-art" aria-hidden="true"><div class="art-radial"></div><div class="time-symbol"><svg viewBox="0 0 230 270"><path d="M42 24h146M42 246h146" fill="none" stroke="#e2f7da" stroke-width="15" stroke-linecap="round"/><path d="M64 35c0 54 43 66 51 99-8 33-51 45-51 99M166 35c0 54-43 66-51 99 8 33 51 45 51 99" fill="none" stroke="#e2f7da" stroke-width="11" stroke-linecap="round"/><path d="M76 75h78l-39 48zM77 198h76l-38-41z" fill="#c9f1b2" opacity=".88"/><path d="M115 128v34" stroke="#c9f1b2" stroke-width="4" stroke-dasharray="4 8"/></svg></div><div class="art-orbit orbit-a"></div><div class="art-orbit orbit-b"></div><div class="art-small-label">TIME IS EVERYTHING.</div></div>
+      </article>
+      <article class="virtual-project" id="virtual-production" aria-labelledby="virtual-title">
+        <div class="virtual-topline">
+          <span class="virtual-kicker"><span class="virtual-kicker-dot" aria-hidden="true"></span><span data-i18n="project2Status">PATENTED DEVELOPMENT CONCEPT</span></span>
+          <span class="virtual-number">02 / 03</span>
+        </div>
+        <div class="virtual-layout">
+          <div class="virtual-copy">
+            <div class="virtual-overline" data-i18n="virtualOverline">VIRTUAL PRODUCTION · ON LOCATION</div>
+            <h3 id="virtual-title" data-i18n="project2Title">Mobile Virtual Production Studio</h3>
+            <p class="virtual-intro" data-i18n="project2Text">A mobile recording studio designed to unfold from a standard 20-foot container into approximately 55 m² of controlled production space — bringing virtual backgrounds directly to location.</p>
+            <div class="virtual-benefits">
+              <div><span class="virtual-benefit-symbol" aria-hidden="true">✳</span><span data-i18n="virtualBenefit1">Designed for weather- and lighting-independent filming</span></div>
+              <div><span class="virtual-benefit-symbol" aria-hidden="true">✳</span><span data-i18n="virtualBenefit2">Designed for off-grid power via battery, solar or generator</span></div>
+              <div><span class="virtual-benefit-symbol" aria-hidden="true">✳</span><span data-i18n="virtualBenefit3">Integrated digital background and room for real camera depth</span></div>
+            </div>
+          </div>
+          <figure class="virtual-drawing">
+            <div class="virtual-drawing-top"><span data-i18n="virtualDiagramTitle">FROM CONTAINER TO STUDIO</span><span class="virtual-diagram-index">FIG. 01–03 ↗</span></div>
+            <img src="studio_transport_modes.png" alt="Patent concept drawings comparing the compact transport container with the deployed mobile recording studio" data-i18n-alt="virtualDiagramAlt" width="1100" height="655" loading="lazy">
+            <figcaption data-i18n="virtualDiagramCaption">Technical concept drawing from the patent presentation — not a photograph of a completed studio.</figcaption>
+          </figure>
+        </div>
+        <div class="virtual-stats" aria-label="Technical concept specifications">
+          <div><strong>20′</strong><span data-i18n="virtualStat1">ISO transport container</span></div>
+          <div><strong>~55 m²</strong><span data-i18n="virtualStat2">Studio area</span></div>
+          <div><strong>≤ 11 m</strong><span data-i18n="virtualStat3">Room depth</span></div>
+          <div><strong>~12 m²</strong><span data-i18n="virtualStat4">Digital background monitor</span></div>
+        </div>
+        <div class="virtual-bottom"><span>DE 10 2022 131 909 B3</span><span data-i18n="virtualDevelopment">Patented concept · Development stage · Not yet commercially available</span></div>
+      </article>
+
+      <article class="last-project" id="last" aria-labelledby="last-title">
+        <div class="last-copy">
+          <div class="last-meta"><span class="last-labs"><span class="last-labs-mark" aria-hidden="true">✳</span> COVERSET LABS</span><span class="last-counter">03 / 03</span></div>
+          <span class="last-status"><span class="last-status-dot" aria-hidden="true"></span><span data-i18n="project3Status">IN DEVELOPMENT</span></span>
+          <h3 id="last-title">LAST<span>.</span></h3>
+          <p class="last-tagline" data-i18n="project3Tagline">The real world is part of the game.</p>
+          <p class="last-description" data-i18n="project3Text">An experimental interactive concept exploring the connection between real-world events, live technology and digital play.</p>
+          <div class="last-footnote"><span aria-hidden="true">↗</span><span data-i18n="project3Note">An early-stage Coverset Labs project — not yet released.</span></div>
+        </div>
+        <div class="last-art" aria-hidden="true">
+          <div class="last-glow"></div>
+          <div class="last-orbit orbit-one"></div>
+          <div class="last-orbit orbit-two"></div>
+          <div class="last-orbit orbit-three"></div>
+          <div class="last-core"><div class="last-core-inner">✳</div></div>
+          <span class="last-satellite sat-one"></span>
+          <span class="last-satellite sat-two"></span>
+          <span class="last-satellite sat-three"></span>
+          <div class="last-art-top">LAB EXPERIMENT / 003</div>
+          <div class="last-art-bottom">IMAGINE <span>→</span> EXPLORE <span>→</span> PLAY</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section about-section" id="about" aria-labelledby="about-title"><div class="container about-grid"><div><div class="section-kicker"><span class="kicker-line"></span><span data-i18n="aboutKicker">ABOUT COVERSET</span></div><h2 id="about-title"><span data-i18n="aboutTitle1">A different</span><br><em data-i18n="aboutTitle2">point of view.</em></h2></div><div class="about-copy"><p class="about-lead" data-i18n="aboutLead">Curiosity is where new technology begins.</p><p data-i18n="aboutText">Coverset Studios combines decades of professional cinematography and production experience with the development of digital products and visual technologies. We value clear ideas, careful execution and solutions that make a tangible difference.</p><div class="about-signature"><span class="signature-rule"></span><span data-i18n="aboutSignature">Independent development company based in Germany.</span></div></div></div></section>
+
+  <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="container contact-grid"><div><div class="section-kicker light"><span class="kicker-line"></span><span data-i18n="contactKicker">GET IN TOUCH</span></div><h2 id="contact-title"><span data-i18n="contactTitle1">Have an idea?</span><br><em data-i18n="contactTitle2">Let's explore it.</em></h2></div><div class="contact-aside"><p data-i18n="contactText">For partnerships, technical collaborations and business inquiries, we'd be glad to hear from you.</p><div class="contact-placeholder"><span class="contact-placeholder-label" data-i18n="contactEmailLabel">BUSINESS EMAIL</span><strong><a class="contact-email" href="mailto:visitors@coverset.eu">visitors@coverset.eu</a></strong></div></div></div></section>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="#top">COVERSET <span>STUDIOS</span></a><span>© <span id="year">2026</span> Coverset Studios Produktgesellschaft mbH</span><div class="footer-links"><a href="impressum.html" data-i18n="footerImprint">Imprint</a><a href="datenschutz.html" data-i18n="footerPrivacy">Privacy</a><a href="#top" aria-label="Back to top">↑</a></div></div></footer>
 </body>
 </html>
